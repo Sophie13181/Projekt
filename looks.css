@@ -5,30 +5,58 @@ body {
   padding: 20px;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef2f5;
+  margin: 0;
+  padding: 20px;
+}
+
 h1 {
   text-align: center;
-  color: #333;
+  color: #222;
   margin-bottom: 40px;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
 .project {
-  background: white;
+  background: #fff;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project h2 {
-  text-align: center;
-  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
 }
 
 .project img {
-  display: block;
   max-width: 100%;
+  border-radius: 12px;
   height: auto;
-  margin: 0 auto;
-  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* Optional custom styling for each project */
+.butterfly { border: 3px solid #f39c12; }
+.dinosaur { border: 3px solid #2ecc71; }
+.football { border: 3px solid #3498db; }
+.penguins { border: 3px solid #9b59b6; }
+.seagull { border: 3px solid #1abc9c; }
+.theater { border: 3px solid #e74c3c; }
+.tictactoe { border: 3px solid #34495e; }
